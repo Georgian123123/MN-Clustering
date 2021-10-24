@@ -1,0 +1,43 @@
+Comana Marian-Georgian, seria CA, grupa 311
+
+
+Task 1
+-----------------------------------------------------------------------------------------------
+Din fiecare fisier test am citit cu "dlmread", functie de citire specifica octavului, 
+numarul de centroizi si matricea ce constituie punctele ce apartin spatiului tridimen-
+sional.
+-----------------------------------------------------------------------------------------------
+Task 2
+-----------------------------------------------------------------------------------------------
+Pentru generarea punctelor random am folosit: o functie "randperm" care creeaza o permuta-
+re cu elemente unice. Liniile sunt alese in ordine din permutarea respectiva, astfel, ele-
+mentele nu se vor suprapune niciodata.
+Am calculat distanta minima de la fiecare punct la centroid, iar distantele minime reprezin-
+ta punctele ce apartin clusterului.
+Repozitionarea centroizilor am realizat-o prin impartirea coordonatelor insumate de punctele 
+ce apartin clusterului la numarul de puncte ce apartin clusterului respectiv.
+In momentul cand repozitionarea centroizilor este identica cu pozitia anterioara a centroizi-
+lor opresc procesul deoarece nu se mai pot regasi puncte pentru vreun cluster.
+-----------------------------------------------------------------------------------------------
+Task 3
+-----------------------------------------------------------------------------------------------
+Graficul este constituit din multimea punctelor ce apartin unor clustere diferite, prin culori
+diferite.
+Ideea este aproximativ aceeasi, si anume, vad ce puncte apartin clusterului si pozitia acestora, 
+urmand sa adaug pozitia si numarul respectiv de elemente din cluster in 3 vectori ce vor re-
+prezenta coordonatele.
+Pentru diferitele culori pe care le folosesc, cresc coordonatele codului RGB la fiecare trecere
+dintr-un cluster la altul.
+-----------------------------------------------------------------------------------------------
+Task 4
+-----------------------------------------------------------------------------------------------
+Pentru calcularea costului total, am adunat fiecare distanta minima de la fiecare punct la un 
+centroid(care semnifica un punct ce apartine clusterului).
+-----------------------------------------------------------------------------------------------
+Task 5
+-----------------------------------------------------------------------------------------------
+Pentru un numar de la 1 la 10(care reprezinta numarul de centroizi), calculez costul total si-l
+memorez intr-un vector, mai apoi urmand sa-l plotez si sa obtin graficul dorit.
+-----------------------------------------------------------------------------------------------
+Utilitate tema : nivel mediu
+Cunostinte dobandite : Putine
